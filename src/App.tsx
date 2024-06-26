@@ -28,7 +28,7 @@ function App() {
         return () => clearInterval(timer);
     }, []);
 
-    if (timeLeft <= 0) {
+    if (timeLeft.hours <= 0) {
         return <h1>Я дома 🙂</h1>;
     }
 
