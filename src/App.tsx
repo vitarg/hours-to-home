@@ -33,11 +33,9 @@ function App() {
     }
 
     return (
-        <>
-            <h1>
-                {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
-            </h1>
-        </>
+        <h1>
+            {timeLeft.hours} : {String(timeLeft.minutes).padStart(2, '0')} : {String(timeLeft.seconds).padStart(2, '0')}
+        </h1>
     );
 }
 
